@@ -7,14 +7,18 @@ def coincidencia (p):
     
     contador = 0
     total = 0
+    
     tupla = [('Pedro', '00000101010101010101'),
             ('Juan' ,  '00101010101101110111'),
             ('Diego',  '00100010010000001001')       
     ]
+    
+    #lista1 = ['Pedro','Juan','Diego']
+    #lista2 = ['00000101010101010101','00101010101101110111','00100010010000001001']
 
-    for i in range  (len(tupla)) :
-            dna = list(tupla[i][1])
-            nombre = tupla[i][0]
+    for i in range  (len(tupla)) :     #(len(lista2)) :     #usar con listas
+            dna = list(tupla[i][1])    #list(lista2[i])     #usar con listas 
+            nombre = tupla[i][0]      #lista1[i]            #usar con listas 
             #print('\n')
 
             for n in range (len(dna)):            
@@ -60,4 +64,5 @@ else:
 
     else:
         print('Longitud de cromosoma invalido',len(cromosoma),'/20')
-    
+
+input()    
